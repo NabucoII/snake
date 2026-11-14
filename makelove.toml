@@ -1,0 +1,14 @@
+name = "Snake"
+default_targets = ["win64", "appimage"]
+build_directory = "build"
+love_version = "11.5"
+
+love_files = [
+    "*",
+    "-*/.*",          # Ignore hidden folders like .git
+    "-build/*",       # Ignore the output folder
+    "-*.exe",         # Ignore the manual engine files
+    "-*.dll",
+    "-*.love",
+    "-*.zip"
+]
